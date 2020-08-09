@@ -1,4 +1,4 @@
-# original-navy
+# slippy
 
 ## Project setup
 ```
