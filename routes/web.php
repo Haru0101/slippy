@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+// tests/testというアドレスにアクセスしたら、
+// TestControllerのindexというメソッドの処理を走らせる
+Route::get('tests/test', 'TestController@index');
