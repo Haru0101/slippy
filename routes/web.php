@@ -23,7 +23,7 @@ Route::get('contact/index', 'ContactFormController@index');
 // contact/〜というルーティングをグループ化
 // さらにmiddlewareの指定で認証してようやくアクセスできるようにする
 Route::group(['prefix' => 'contact', 'middleware' => 'auth'], function(){
-    Route::get('index', 'ContactFormController@index');
+    Route::get('index', 'ContactFormController@index')->name('contact.index');;
 });
 Auth::routes();
 
