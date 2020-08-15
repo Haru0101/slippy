@@ -18,7 +18,9 @@ Route::get('/', function () {
 // tests/testというアドレスにアクセスしたら、
 // TestControllerのindexというメソッドの処理を走らせる
 Route::get('tests/test', 'TestController@index');
-Auth::routes();
+
+Route::get('contact/index', 'ContactFormController@index');
+// Auth::routes();
 
 // REST
 // Route::resource('contacts', 'ContactFormController')->only([
