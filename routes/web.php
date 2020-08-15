@@ -18,3 +18,6 @@ Route::get('/', function () {
 // tests/testというアドレスにアクセスしたら、
 // TestControllerのindexというメソッドの処理を走らせる
 Route::get('tests/test', 'TestController@index');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
