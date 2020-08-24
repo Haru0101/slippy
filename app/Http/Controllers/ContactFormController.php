@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\ContactForm;
 
 class ContactFormController extends Controller
 {
@@ -37,6 +38,13 @@ class ContactFormController extends Controller
     public function store(Request $request)
     {
         //
+        $your_name = $request->input('your_name');
+        $title = $request->input('title');
+        $email = $request->input('email');
+        $url = $request->input('url');
+        $gender = $request->input('gender');
+        $age = $request->input('age');
+        $contact = $request->input('contact');
     }
 
     /**
