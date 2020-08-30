@@ -19,7 +19,6 @@ Route::get('/', function () {
 // TestControllerのindexというメソッドの処理を走らせる
 Route::get('tests/test', 'TestController@index');
 
-Route::get('contact/index', 'ContactFormController@index');
 // contact/〜というルーティングをグループ化
 // さらにmiddlewareの指定で認証してようやくアクセスできるようにする
 Route::group(['prefix' => 'contact', 'middleware' => 'auth'], function(){
